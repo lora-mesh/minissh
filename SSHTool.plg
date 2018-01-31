@@ -1,0 +1,103 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SSHTool - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/SSHTool.res" /d "NDEBUG" "C:\Users\admin\Desktop\SSHTool\SSHTool.rc"" 
+Creating temporary file "C:\Users\admin\AppData\Local\Temp\RSP2BBE.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\admin\Desktop\SSHTool\ssh_common.cpp"
+"C:\Users\admin\Desktop\SSHTool\SSHTool.cpp"
+"C:\Users\admin\Desktop\SSHTool\SSHToolDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\admin\AppData\Local\Temp\RSP2BBE.tmp" 
+Creating temporary file "C:\Users\admin\AppData\Local\Temp\RSP2BCF.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SSHTool.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\admin\Desktop\SSHTool\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\admin\AppData\Local\Temp\RSP2BCF.tmp" 
+Creating temporary file "C:\Users\admin\AppData\Local\Temp\RSP2BD0.tmp" with contents
+[
+ssh.lib Libcmtd.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SSHTool.pdb" /machine:I386 /out:"Release/SSHTool.exe" 
+.\Release\ssh_common.obj
+.\Release\SSHTool.obj
+.\Release\SSHToolDlg.obj
+.\Release\StdAfx.obj
+.\Release\SSHTool.res
+]
+Creating command line "link.exe @C:\Users\admin\AppData\Local\Temp\RSP2BD0.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ssh_common.cpp
+SSHTool.cpp
+SSHToolDlg.cpp
+Generating Code...
+Linking...
+nafxcw.lib(afxmem.obj) : error LNK2005: "void * __cdecl operator new(unsigned int)" (??2@YAPAXI@Z) already defined in Libcmtd.lib(new.obj)
+nafxcw.lib(afxmem.obj) : error LNK2005: "void __cdecl operator delete(void *)" (??3@YAXPAX@Z) already defined in Libcmtd.lib(dbgdel.obj)
+LINK : warning LNK4098: defaultlib "LIBCMT" conflicts with use of other libs; use /NODEFAULTLIB:library
+Release/SSHTool.exe : fatal error LNK1169: one or more multiply defined symbols found
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+SSHTool.exe - 3 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: SSHTool - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/SSHTool.res" /d "_DEBUG" "C:\Users\admin\Desktop\SSHTool\SSHTool.rc"" 
+Creating temporary file "C:\Users\admin\AppData\Local\Temp\RSP2FF6.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\admin\Desktop\SSHTool\ssh_common.cpp"
+"C:\Users\admin\Desktop\SSHTool\SSHTool.cpp"
+"C:\Users\admin\Desktop\SSHTool\SSHToolDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\admin\AppData\Local\Temp\RSP2FF6.tmp" 
+Creating temporary file "C:\Users\admin\AppData\Local\Temp\RSP3006.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/SSHTool.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\admin\Desktop\SSHTool\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\admin\AppData\Local\Temp\RSP3006.tmp" 
+Creating temporary file "C:\Users\admin\AppData\Local\Temp\RSP3007.tmp" with contents
+[
+ssh.lib Nafxcwd.lib  Libcmtd.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/SSHTool.pdb" /debug /machine:I386 /out:"Debug/SSHTool.exe" /pdbtype:sept 
+.\Debug\ssh_common.obj
+.\Debug\SSHTool.obj
+.\Debug\SSHToolDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\SSHTool.res
+]
+Creating command line "link.exe @C:\Users\admin\AppData\Local\Temp\RSP3007.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ssh_common.cpp
+SSHTool.cpp
+SSHToolDlg.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/SSHTool.bsc"  .\Debug\StdAfx.sbr .\Debug\ssh_common.sbr .\Debug\SSHTool.sbr .\Debug\SSHToolDlg.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SSHTool.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
